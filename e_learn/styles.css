@@ -147,4 +147,108 @@ p{
     line-height: 30px; text-align: justify;
     padding-left: 26px;
     padding-right: 26px;
+
+}
+
+/* =============================
+   RESPONSIVE DESIGN FIXES
+   ============================= */
+
+/* Prevent content from overflowing horizontally */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Make navbar responsive */
+@media (max-width: 768px) {
+    .navdiv {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo a {
+        font-size: 32px;
+    }
+
+    .navbar ul {
+        width: 100%;
+        text-align: left;
+        padding-top: 10px;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    li a {
+        font-size: 16px;
+        margin-right: 0;
+        display: block;
+        padding: 8px 0;
+    }
+}
+
+/* Responsive logo image */
+.logo img {
+    max-width: 120px;
+}
+
+/* Make images responsive */
+.pic img,
+.table img {
+    width: 100%;
+    height: auto;
+}
+
+/* Card buttons responsive */
+.btn-course {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Responsive pyc sections */
+.pyc {
+    margin: 10px 20px;
+}
+
+/* Responsive paragraphs */
+p {
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 26px;
+}
+
+/* Footer responsiveness already exists — adding improvements */
+@media (max-width: 700px) {
+    footer {
+        text-align: center;
+    }
+
+    .footerNav ul li a {
+        font-size: 1.1em;
+        margin: 10px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 26px;
+    }
+
+    li a {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .pyc {
+        margin: 10px;
+    }
 }
